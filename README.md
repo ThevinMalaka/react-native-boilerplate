@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="assets/img/GitHub_ThevinMalaka_Boilerplate.png" alt="Intro" width="100%">
+    <img src="assets/img/GitHub_ThevinMalaka_Boilerplate.png" alt="Intro" width="60%">
 </div>
 
 # React Native boilerplate by Thevin Malaka
