@@ -15,7 +15,6 @@ export function testRequest(info) {
 }
 
 export function testRequestSuccess(info) {
-  console.log('ssssss', info);
   return {
     type: types.TEST_REQUEST_SUCCESS,
     info,

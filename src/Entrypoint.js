@@ -6,18 +6,20 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {PersistGate} from 'redux-persist/es/integration/react';
 
 import configureStore from './store';
-import Home from './features/home/containers'
+import Home from './features/home/containers';
+import Navigator from './navigation';
 
 const {persistor, store} = configureStore();
 
 const Entrypoint = () => {
-return (
+  return (
     <Provider store={store}>
       <PersistGate loading={<ActivityIndicator />} persistor={persistor}>
         <SafeAreaProvider>
-            <PaperProvider>
-                <Home />
-            </PaperProvider>
+          <PaperProvider>
+            {/* <Home /> */}
+            <Navigator />
+          </PaperProvider>
         </SafeAreaProvider>
       </PersistGate>
     </Provider>

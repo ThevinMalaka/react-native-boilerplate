@@ -3,8 +3,4 @@
  */
 import * as homeReducer from '../features/home/reducers';
 
-
-export default Object.assign(
-    {},
-    homeReducer,
-);
+export default Object.assign({}, homeReducer);
