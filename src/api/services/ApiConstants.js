@@ -3,7 +3,7 @@
 // import Config from 'react-native-config';
 
 export default {
-    // BASE_URL: Config.API_URL,
-    BASE_URL: 'https://api.publicapis.org',
-    HOME: '/random',
+  // BASE_URL: Config.API_URL,
+  BASE_URL: 'https://api.publicapis.org',
+  HOME: '/random',
 };

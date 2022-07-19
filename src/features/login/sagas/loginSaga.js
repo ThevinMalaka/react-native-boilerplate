@@ -14,6 +14,7 @@ export function* testFunction(payload) {
     }
     yield put(homeAction.testRequestSuccess(data?.entries));
   } catch (error) {
+    console.log('SAGAAA');
     yield put(homeAction.testRequestfailed());
   }
 }

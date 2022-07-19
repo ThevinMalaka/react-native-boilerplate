@@ -1,11 +1,10 @@
 import React, {useEffect, useCallback} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text} from 'react-native';
 import {Button} from 'react-native-paper';
 
 import {testRequest, chnageActionStatus} from '../actions';
 import {getTestFunctionStatus, getTestApiEndpointData} from '../selectors';
-import {navigateToLogin} from '../../../navigation/NavigationHelpers';
 
 const Home = () => {
   const status = useSelector(state => getTestFunctionStatus(state));
@@ -75,15 +74,6 @@ const Home = () => {
           style={{borderRadius: 20, marginTop: 30}}>
           Press to test Api Endpoint
         </Button>
-
-        <TouchableOpacity
-          onPress={() => {
-            navigateToLogin();
-          }}>
-          <Text style={{fontSize: 15, marginTop: 20, fontWeight: 'bold'}}>
-            Go To Login Screen
-          </Text>
-        </TouchableOpacity>
 
         <View
           style={{
